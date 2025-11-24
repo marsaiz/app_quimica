@@ -74,7 +74,7 @@ class _JuegoIdentificacionState extends State<JuegoIdentificacion> {
 
   void _verificarRespuesta(String seleccion) {
     if (_yaRespondio) return; // Evitar que cambie la respuesta una vez seleccionada
-
+    /// Actualizar estado con la respuesta seleccionada
     setState(() {
       _respuestaSeleccionada = seleccion;
       _esCorrecto = (seleccion == _elementoActual.nombre);
